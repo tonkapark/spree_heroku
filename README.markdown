@@ -13,7 +13,9 @@ Usage
 
 grab with: `script/extension install git://github.com/goodkarma/spree-heroku.git`
  
-
+Edit the following files:
+1. /spree-heroku/models/image.rb - to enter name of Amazon S3 bucket you are using for images
+2. /spree-heroku/config/aws_s3.yml - to enter Amazon S3 credentials
 
 
 
