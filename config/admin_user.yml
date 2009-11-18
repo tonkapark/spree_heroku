@@ -1,0 +1,17 @@
+development:
+  email: admin@localhost.com
+  login: admin@localhost.com
+  password: password
+  password_confirmation: password
+
+test:
+  email: admin@localhost.com
+  login: admin@localhost.com
+  password: password
+  password_confirmation: password
+
+production:
+  email: admin@localhost.com
+  login: admin@localhost.com
+  password: password
+  password_confirmation: password

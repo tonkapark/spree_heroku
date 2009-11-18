@@ -1,3 +1,22 @@
+namespace :heroku do  
+  namespace :db do
+    namespace :admin do
+      desc "Create admin username and password from config file"
+      task :create => :environment do
+        require 'authlogic'     
+        
+        ATTRIBUTES = YAML.load_file("#{HerokuExtension.root}/config/admin_user.yml")[RAILS_ENV]        
+        
+        admin = User.create(ATTRIBUTES)
+        
+        role = Role.find_or_create_by_name "admin"
+        admin.roles << role
+        admin.save          
+      end
+    end
+  end
+end  
+
 namespace :db do
   desc "Bootstrap your database for Spree."
   task :bootstrap  => :environment do

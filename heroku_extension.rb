@@ -4,7 +4,7 @@
 class HerokuExtension < Spree::Extension
   version "1.0"
   description "Spree Heroku Extension"
-  url "http://yourwebsite.com/heroku"
+  url "http://github.com/tonkapark/spree_heroku"
 
   # Please use heroku/config/routes.rb instead for extension routes.
 
