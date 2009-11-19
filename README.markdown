@@ -20,4 +20,4 @@ Edit admin_user.yml or leave unchanged. Run heroku heroku:db:admin:create to cre
 Documentation
 -------
 
-Read more at http://tonkapark.com/331/building-wordsmith-a-spree-extension/
+Read more at http://tonkapark.com/337/deploying-spree-using-heroku/
