@@ -29,6 +29,17 @@ Optional: In heroku_extension.rb you can wrap the Image code with a RAILS_ENV co
 'if RAILS_ENV == 'production''
 
 
+Heroku Outbound Emails
+----------------------
+
+To make sure emails are sent make sure to add the basic sendgrid addon. This is the easiest solution at this time for less than 200 emails a day.
+
+'heroku addons:add sendgrid:basic'
+
+http://docs.heroku.com/sendgrid
+
+
+
 Documentation
 -------
 
